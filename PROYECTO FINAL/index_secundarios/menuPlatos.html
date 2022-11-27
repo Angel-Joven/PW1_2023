@@ -1,0 +1,325 @@
+<!-- PROYECTO FINAL
+
+JOVEN JIMENEZ ANGEL CRISTIAN
+
+PROGRAMACION WEB 1 - 1559
+
+02/12/2022
+
+-->
+
+<!DOCTYPE html> <!-- Declaracion  -->
+<html> <!-- Lenguaje interpretado -->
+<head> <!-- Indicamos los metadatos. -->
+    <title>Parrila Vikinga</title> <!-- Le asignamos ese titulo el cual aparecera arriba en la pestaña del navegador. -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Importamos nuestro archivo de estilos a nuestra pagina web. -->
+</head> <!-- Cerramos la etiqueta head. -->
+<body> <!-- Generamos nuestro cuerpo de la pagina web. -->
+    <header> <!-- Generamos nuestro header el cual sera la cabezera de nuestra pagina. -->
+
+        <div class="bg-color-01"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+            <div class="encabezado"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar el logo de la pagina. -->
+                <div class="logo"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a ubicar el logo con base a la grid anteriormente creada. -->
+                    <img src="/img/logo.png" alt="logo" height="100px"> <!-- Insertamos nuestro logo con la etiqueta 'img' y le asignamos un nombre y una altura considerable. -->
+                </div> <!-- Cerramos la etiqueta div. -->
+            </div> <!-- Cerramos la etiqueta div. -->
+            
+
+            <div class="menu-navegacion"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a ubicar nuestro menu de navegacion. -->
+                <nav> <!-- Creamos nuestro menu de navegacion con la etiqueta 'nav' y le añadimos en forma de 
+                    lista las secciones con una redireccion a la nueva seccion y 
+                    una clase personalizada el cual los elementos los va a posicionar de manera horizontal. -->
+                    <ul>
+                        <li class="navegacion-horizontal"><a href="/index.html">MENU PRINCIPAL</a></li>
+                        <li class="navegacion-horizontal"><a href="/menuComida.html">MENU COMIDA</a></li>
+                        <li class="navegacion-horizontal"><a href="/galeria.html">GALERIA</a></li>
+                        <li class="navegacion-horizontal"><a href="/promociones.html">PROMOCIONES</a></li>
+                    </ul> <!-- Cerramos la etiqueta ul. -->
+                </nav> <!-- Cerramos la etiqueta nav. -->
+            </div> <!-- Cerramos la etiqueta div. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+    </header> <!-- Cerramos la etiqueta header. -->
+
+    <div class="bg-color-02-menuPlatos"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+        <div class="menuPlatos-tabla"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear la tabla para nuestro menu de platos principales. -->
+            <table border="1px"> <!-- Creamos una tabla con un margen de 1px. -->
+                <thead> <!-- Creamos los encabezados. -->
+                    <tr> <!-- Utilizamos tr y th para añadir los encabezados a la tabla. -->
+                        <th>PLATILLO</th> 
+                        <th>DESCRIPCION</th>
+                        <th>TAMAÑO</th>
+                        <th>IMAGEN</th>
+                        <th>PRECIO</th>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </thead> <!-- Cerramos la etiqueta thead. -->
+            
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Flautas de Pollo</td> 
+                        <td>Orden de 3 flautas de pollo</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato01.jpg" alt="plato01" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 91</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Enchiladas Poblanas</td> 
+                        <td>Orden de 3 enchiladas poblanas rellenas de pollo y bañadas en mole poblano</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato02.jpg" alt="plato02" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 115</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Enchiladas Suizas</td> 
+                        <td>Orden de 3 enchiladas suizas</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato03.jpg" alt="plato03" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 115</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Pollo a la Parrilla</td> 
+                        <td>Pechuga a la parrilla con ensalada y frijoles refritos con totopos</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato04.jpg" alt="plato04" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 110</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Carne asada a la Parrila</td> 
+                        <td>Carne asada con ensalada y frijoles refritos con totopos</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato05.jpg" alt="plato05" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 116</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Chilaquiles con Carne Asada</td> 
+                        <td>Carne asada con Chilaquiles verdes</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato06.jpg" alt="plato06" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 123</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Chilaquiles con Pechuga</td> 
+                        <td>Pechuga asada con Chilaquiles verdes</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato07.jpg" alt="plato07" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 108</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Chilaquiles con Arrachera</td> 
+                        <td>Arrachera con Chilaquiles verdes</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato08.jpg" alt="plato08" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 125</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Fajitas de Arrachera</td> 
+                        <td>Carne de arrachera sobre una sabana de morron</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato09.jpg" alt="plato09" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 130</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Fajitas de Pollo</td> 
+                        <td>Fajitas de pollo sobre una sabana de morron</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato10.jpg" alt="plato10" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 125</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Pechuga Empanizada</td> 
+                        <td>Pechuga empanizada con papas a la francesa, ensalada y timbal de arroz</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato11.jpg" alt="plato11" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 127</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Milanesa Empanizada</td> 
+                        <td>Milanesa empanizada con papas a la francesa, ensalada y frijoles refritos</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato12.jpg" alt="plato12" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 140</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Costilla con Frijoles</td> 
+                        <td>Costilla con frijoles, chicharron, nopal asado, chorizo, guacamole y cebollitas cambray</td>
+                        <td>XL</td>
+                        <td><img src="/img/plato13.jpg" alt="plato13" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 199</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Arrachera</td> 
+                        <td>Corte de arrachera con papas a la francesa, rajas de poblano y frijoles refritos</td>
+                        <td>Grande</td>
+                        <td><img src="/img/plato14.jpg" alt="plato14" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 155</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Filete a la Tampiqueña</td> 
+                        <td>Filete a la tampiqueña con arroz, enchiladas (2 piezas), frijoles refritos y guacamole</td>
+                        <td>XL</td>
+                        <td><img src="/img/plato15.jpg" alt="plato15" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 219</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Arrachera a la Tampiqueña</td> 
+                        <td>Arrachera a la tampiqueña con arroz, chorizo, nopal asado, frijoles refritos y guacamole</td>
+                        <td>XL</td>
+                        <td><img src="/img/plato16.jpg" alt="plato16" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 170</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Parrillada Vikinga</td> 
+                        <td>Incluye lomo adobado, pechuga, arrachera, chuleta, chorizo, costilla, <br>
+                             queso fundido, papas a la francesa, nopales asados, cebollitas cambray y chiles toreados</td>
+                        <td>XL</td>
+                        <td><img src="/img/plato17.jpg" alt="plato17" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 435</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Hamburguesa Vikinga</td> 
+                        <td>Hamburguesa de carne de res con jamon, queso amarillo, mayonesa y papas a la francesa</td>
+                        <td>Mediano</td>
+                        <td><img src="/img/plato18.jpg" alt="plato18" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 95</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Pequeños Vikingos</td> 
+                        <td>Nuggets de pollo, papas a la francesa y arroz</td>
+                        <td>Chico</td>
+                        <td><img src="/img/plato19.jpg" alt="plato19" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 85</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+                <tbody> <!-- Se crea el cuerpo de la tabla. -->
+                    <tr> <!-- Utilizamos tr y td para añadir las celdas a la tabla. 
+                        Se rellenan las celdas en base a los encabezados y se les proporciona 
+                        clases personalizadas para cambiar el tamaño de la fuente y para poder añadir imagenes con su respectivo nombre. -->
+                        <td class="Platillo-tabla-texto">Club Sandwich</td> 
+                        <td>Club Sandwich con papas a la francesa</td>
+                        <td>Mediano</td>
+                        <td><img src="/img/plato20.jpg" alt="plato20" height="100px"></td>
+                        <td class="Precio-tabla-numero">$ 115</td>
+                    </tr> <!-- Cerramos la etiqueta tr. -->
+                </tbody> <!-- Cerramos la etiqueta tbody. -->
+
+            </table> <!-- Cerramos la etiqueta table. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+
+        <div class="menuPlatos-texto"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a modificar el titulo. -->
+            <h2>MENU DE PLATOS PRINCIPALES</h2> <!-- Generamos nuestro titulo de la seccion. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+
+    </div>
+
+    <footer> <!-- Creamos nuestro pie de pagina con la etiqueta 'footer' -->
+        <div class="bg-color-04"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+            <div class="pie-de-pagina"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar el texto. -->
+            <!-- Creamos varios parrafos con una clase personalizada para ajustarla a la grid, 
+                esto con el fin de colocar informacion de contacto, añadiendo saltos de linea. -->
+                <p class="info03">UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO <br>
+                                        <br> FACULTAD DE ESTUDIOS SUPERIORES ARAGON</p> <!-- Cerramos la etiqueta p. -->
+    
+                <p class="info04">INGENIERIA EN COMPUTACION <br>
+                                        <br> PROGRAMACION WEB - 1559</p> <!-- Cerramos la etiqueta p. -->
+        
+                <p class="info05">PAGINA WEB CREADO POR: <br>
+                                        <br>JOVEN JIMENEZ ANGEL CRISTIAN</p> <!-- Cerramos la etiqueta p. -->
+    
+            </div> <!-- Cerramos la etiqueta div. --> 
+        </div> <!-- Cerramos la etiqueta div. -->
+    </footer> <!-- Cerramos la etiqueta footer. -->
+
+</body> <!-- Cerramos la etiqueta body. -->
+</html> <!-- Cerramos la etiqueta html. -->

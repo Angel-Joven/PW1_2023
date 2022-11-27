@@ -1,0 +1,16 @@
+Proyecto creado por:
+JOVEN JIMENEZ ANGEL CRISTIAN
+
+Para la materia de:
+PROGRAMACION WEB 1 - 1559
+
+- - ESTE PROYECTO SE CREO EN VISUAL STUDIO CODE Y SE UTILIZO LA EXTENSION DE "Live Server" DE Ritwick Dey. 
+    (Esta extension se encuentra disponible en Visual Studio Code, descarge e instale dicha extension.)- -
+
+- - PARA PODER VISUALIZAR ESTE PROYECTO, ABRA VISUAL STUDIO CODE, 
+    DESPUES ABRA LA CARPETA DEL PROYECTO, 
+    FINALMENTE DE CLIC DONDE DICE "Go Live" QUE SE ENCUENTRA EN LA ESQUINA INFERIOR DERECHA. - -
+
+- - SE ABRIRA EL PROYECTO EN EL NAVEGADOR - -
+
+- - LISTO - -

@@ -1,0 +1,598 @@
+/* PROYECTO FINAL
+
+JOVEN JIMENEZ ANGEL CRISTIAN
+
+PROGRAMACION WEB 1 - 1559
+
+02/12/2022 */
+
+/* Insertamos las fuentes personalizadas que vamos a ocupar */
+
+@font-face {
+    font-family: fnormal;
+    src: url(../fonts/ROCK.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: fnegritas;
+    src: url(../fonts/rockb.ttf) format('truetype');
+}
+
+/* - - MENU PRINCIPAL - - */
+
+/* Cambiamos el color y la altura de la div de nuestro encabezado. */
+
+.bg-color-01{
+    background-color: #FFFF00;
+    height: 120px;
+}
+
+/* Creamos una grid para nuestro encabezado, 
+le asignamos un tamaño a las cuadriculas de la grid 
+y ajustamos la posicion de dicha grid. 
+Tambien cambiamos la fuente a la que importamos con anteriormente.  */
+
+.encabezado{
+    display: grid;
+    grid-auto-rows: 100px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-family: fnormal;
+}
+
+/* Ubicamos la div de nuestro logo en base a la grid que creamos anteiormente.  */
+
+.logo{
+    grid-column: 1;
+    grid-row: 1/2;
+}
+
+/* Ajustamos nuestra div del menu de navegacion y la centramos. */
+
+.menu-navegacion{
+    position: relative;
+    text-align: center;
+    top: -65px;
+}
+
+/* Hacemos que nuestro menu de navegacion sea de manera horizontal,
+añadiendole tambien la separacion entre el texto y la fuente que importamos anteriormente. */
+
+.navegacion-horizontal{
+    display: inline;
+    padding: 100px;
+    font-family: fnegritas;
+}
+
+/* Cambiamos el color y la altura de la div de nuestro contenido de la promocion del dia. */
+
+.bg-color-02{
+    background-color: #FFCC00;
+    height: 650px;
+}
+
+/* Hacemos que nuestro titulo 'Menu Principal' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPrincipal-texto{
+    position: relative;
+    top: -170px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+
+}
+
+/* Creamos una grid para nuestra promocion del dia,
+le asignamos un tamaño a las cuadriculas de la grid 
+y cambiamos la posicion de la grid. */
+
+.promocion-dia{
+    display: grid;
+    grid-auto-rows: 100px;
+    position: relative;
+    top: 100px;
+}
+
+/* Ubicamos nuestro titulo de la promocion del dia
+en base a la grid que creamos anteiormente,
+tambien ajustamos el titulo a una nueva posicion,
+le añadimos la fuente que importamos anteriormente
+ y ajustamos el tamaño de la fuente.*/
+
+.titulo-promo01{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-family: fnormal;
+    font-size: 30px;
+}
+
+/* Ubicamos nuestra div para la imagen de la promocion del dia
+en base a la grid que creamos anteiormente. */
+
+.promo01{
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+
+/* Cambiamos el color y la altura de la div de nuestro contenido 
+de la informacion y ubicacion del restaurante. */
+
+.bg-color-03{
+    background-color: #FF9900;
+    height: 500px;
+}
+
+/* Creamos una grid para nuestra informacion y ubicacion y
+le asignamos un tamaño a las cuadriculas de la grid. */
+
+.informacion{
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+/* Ubicamos nuestro texto de la informacion
+en base a la grid que creamos anteiormente,
+tambien ajustamos el texto, le cambiamos el tamaño del texto y
+le añadimos la fuente que importamos anteriormente. */
+
+.info01{
+    grid-column: 2/5;
+    grid-row: 1/3;
+    text-align: left;
+    font-family: fnormal;
+    font-size: 20px;
+}
+
+/* Ubicamos la div de nuestra imagen de la informacion
+en base a la grid que creamos anteiormente.  */
+
+.imagen01{
+    grid-column: 2/5;
+    grid-row: 3/3;
+}
+
+/* Ubicamos nuestro texto de la ubicacion
+en base a la grid que creamos anteiormente,
+tambien ajustamos el texto, le cambiamos el tamaño del texto y
+le añadimos la fuente que importamos anteriormente. */
+
+.info02{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    text-align: left;
+    font-family: fnormal;
+    font-size: 17px;
+}
+
+/* Ubicamos la div de nuestra imagen de la ubicacion
+en base a la grid que creamos anteiormente.  */
+
+.imagen02{
+    grid-column: 4/5;
+    grid-row: 3/3;
+}
+
+/* Cambiamos el color y la altura de la div de nuestro pie de pagina. */
+
+.bg-color-04{
+    background-color: #FF6600;
+    height: 100px;
+}
+
+/* Creamos una grid para nuestro pie de pagina,
+le asignamos un tamaño a las cuadriculas de la grid 
+y le asignamos una nueva ubicacion. */
+
+.pie-de-pagina{
+    position: relative;
+    left: 10px;
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+/* Ubicamos nuestro texto del pie de pagina
+en base a la grid que creamos anteiormente,
+le cambiamos el tamaño del texto y
+le añadimos la fuente que importamos anteriormente. */
+
+.info03{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-family: fnegritas;
+    font-size: 15px;
+}
+
+/* Ubicamos nuestro texto del pie de pagina
+en base a la grid que creamos anteiormente,
+le cambiamos el tamaño del texto y
+le añadimos la fuente que importamos anteriormente. */
+
+.info04{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: fnegritas;
+    font-size: 15px;
+}
+
+/* Ubicamos nuestro texto del pie de pagina
+en base a la grid que creamos anteiormente,
+le cambiamos el tamaño del texto y
+le añadimos la fuente que importamos anteriormente. */
+
+.info05{
+    grid-column: 3/3;
+    grid-row: 1/2;
+    font-family: fnegritas;
+    font-size: 15px;
+}
+
+/* -- MENU COMIDA -- */
+
+/* Cambiamos el color y la altura de la div de nuestro menu de navegacion de platillos. */
+
+.bg-color-02-menuComida{
+    background-color: #FF9900;
+    height: 730px;
+}
+
+/* Creamos una grid para nuestras imagenes del menuComida,
+le asignamos un tamaño a las cuadriculas de la grid 
+y le asignamos una nueva ubicacion. */
+
+.imagenes-menuComida{
+    display: grid;
+    grid-auto-rows: 100px;
+    position: relative;
+    top: 400px;
+}
+
+/* Ubicamos la div de nuestra imagen de menuComida
+en base a la grid que creamos anteiormente.  */
+
+.imagen-menuComida-01{
+    grid-column: 2/9;
+    grid-row: 1;
+}
+
+/* Ubicamos la div de nuestra imagen de menuComida
+en base a la grid que creamos anteiormente.  */
+
+.imagen-menuComida-02{
+    grid-column: 4/9;
+    grid-row: 1;
+}
+
+/* Ubicamos la div de nuestra imagen de menuComida
+en base a la grid que creamos anteiormente.  */
+
+.imagen-menuComida-03{
+    grid-column: 6/9;
+    grid-row: 1;
+}
+
+/* Ubicamos la div de nuestra imagen de menuComida
+en base a la grid que creamos anteiormente.  */
+
+.imagen-menuComida-04{
+    grid-column: 8/9;
+    grid-row: 1;
+}
+
+/* Le asignamos una nueva ubicacion nuestro menu de navegacion de la
+seccion de los titulos del menuComida. */
+
+.menuComida-selector{
+    position: relative;
+    top: 150px;
+}
+
+/* Hacemos que nuestro menu de navegacion de los titulos menuComida sea de manera horizontal,
+añadiendole tambien la separacion entre el texto, cambiando el tamaño y 
+la fuente que importamos anteriormente. */
+
+.menuComida-lista-01{
+    display: inline;
+    padding: 190px;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestro menu de navegacion de los titulos menuComida sea de manera horizontal,
+añadiendole tambien la separacion entre el texto, cambiando el tamaño y 
+la fuente que importamos anteriormente. */
+
+.menuComida-lista-02{
+    display: inline;
+    padding: 70px;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestro menu de navegacion de los titulos menuComida sea de manera horizontal,
+añadiendole tambien la separacion entre el texto, cambiando el tamaño y 
+la fuente que importamos anteriormente. */
+
+.menuComida-lista-03{
+    display: inline;
+    padding: 205px;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestro menu de navegacion de los titulos menuComida sea de manera horizontal,
+añadiendole tambien la separacion entre el texto, cambiando el tamaño y 
+la fuente que importamos anteriormente. */
+
+.menuComida-lista-04{
+    display: inline;
+    padding: 65px;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestro titulo 'Menu de Comida' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuComida-texto{
+    position: relative;
+    top: -120px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* - - MENU PLATO PRINCIPAL - - */
+
+/* A los encabezados de la tabla le cambiamos 
+el tamaño de la fuente, alineamos el texto al centro 
+y usamos la fuente que importamos anteriormente. */
+
+th{
+    font-family: fnegritas;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* A la etiqueta de 'table' le cambiamos la posicion 
+y lo centramos de forma horizontal con ayuda del margin. */
+
+table {
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+
+/* A las celdas que contengan el nombre del platillo/bebida le cambiamos 
+el tamaño de la fuente, alineamos el texto al centro 
+y usamos la fuente que importamos anteriormente. */
+
+.Platillo-tabla-texto{
+    font-family: fnegritas;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* A las celdas que contengan el precio del platillo/bebida le cambiamos 
+el tamaño de la fuente, alineamos el texto al centro 
+y usamos la fuente que importamos anteriormente. */
+
+.Precio-tabla-numero{
+    font-family: fnegritas;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Cambiamos el color y la altura de la div de nuestro menuPlatos. */
+
+.bg-color-02-menuPlatos{
+    background-color: #FFCC00;
+    height: 2450px;
+}
+
+/* Hacemos que nuestro titulo 'Menu de Platos principales' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPlatos-texto{
+    position: relative;
+    top: -2215px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* - - MENU BEBIDAS - - */
+
+/* Cambiamos el color y la altura de la div de nuestro menuBebidas. */
+
+.bg-color-02-menuBebidas{
+    background-color: #FFCC00;
+    height: 1800px;
+}
+
+/* Hacemos que nuestro titulo 'Menu de Bebidas' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuBebidas-texto{
+    position: relative;
+    top: -1555px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* - - MENU POSTRES - -  */
+
+/* Cambiamos el color y la altura de la div de nuestro menuPostres. */
+
+.bg-color-02-menuPostres{
+    background-color: #FFCC00;
+    height: 1150px;
+}
+
+/* Hacemos que nuestro titulo 'Menu de Postres' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPostres-texto{
+    position: relative;
+    top: -895px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* - - MENU PAQUETES - - */
+
+/* Cambiamos el color y la altura de la div de nuestro menuPaquetes. */
+
+.bg-color-02-menuPaquetes{
+    background-color: #FFCC00;
+    height: 725px;
+}
+
+/* Hacemos que nuestro titulo 'Menu de Paquetes' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPaquetes-texto{
+    position: relative;
+    top: -240px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestro texto que esta debajo de 
+la tabla del menu de paquetes este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPaquetes-texto2{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* -- GALERIA -- */
+
+/* Cambiamos el color y la altura de la div de nuestra Galeria. */
+
+.bg-color-02-galeria{
+    background-color: #FFCC00;
+    height: 1130px;
+}
+
+/* Creamos una grid para nuestras imagenes de la galeria,
+asignamos que las columnas contengan 3 imagenes con un maximo de 300px,
+le asignamos una separacion de 15px
+y le asignamos una nueva ubicacion. */
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 15px;
+    position: relative;
+    left: 476px;
+    top: 150px;
+}
+
+/* Asignamos que todas las imagenes que contengan esta clase, su ancho sea del 100% */
+
+.menuGaleria{
+    width: 100%;
+}
+
+/* Hacemos que nuestro titulo 'Galeria' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuGaleria-texto{
+    position: relative;
+    top: -900px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* -- PROMOCIONES -- */
+
+/* Hacemos que nuestro titulo 'Promociones' este centrado, 
+cambiando el tamaño del mismo, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.menuPromociones-texto{
+    position: relative;
+    top: -170px;
+    text-align: center;
+    font-family: fnegritas;
+    font-size: 30px;
+}
+
+/* Creamos una grid para nuestra div de promocion-semanal-temporada 
+donde almacenara el texto y las imagenes,
+le asignamos un tamaño a las cuadriculas de la grid 
+y le asignamos una nueva ubicacion. */
+
+.promocion-semanal-temporada{
+    display: grid;
+    grid-auto-rows: 100px;
+    position: relative;
+    left: 100px;
+}
+
+/* Hacemos que nuestro titulo 'Promocion de Fin de Semana' este colocado en la grid 
+cambiando el tamaño del texto, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.titulo-promo02{
+    position: relative;
+    top: 40px;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    font-family: fnormal;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestra imagen de la promocion este colocada en la grid 
+y reubicamos la imagen. */
+
+.promocion-img01{
+    grid-column: 2/8;
+    grid-row: 2/2;
+    position: relative;
+    top: 40px;
+}
+
+/* Hacemos que nuestro titulo 'Promocion de Fin de Semana' este colocado en la grid 
+cambiando el tamaño del texto, reubicando el texto y 
+usando la fuente que importamos anteriormente. */
+
+.titulo-promo03{
+    position: relative;
+    top: 40px;
+    grid-column: 6/8;
+    grid-row: 1/2;
+    font-family: fnormal;
+    font-size: 30px;
+}
+
+/* Hacemos que nuestra imagen de la promocion este colocada en la grid 
+y reubicamos la imagen. */
+
+.promocion-img02{
+    grid-column: 6/8;
+    grid-row: 2/2;
+    position: relative;
+    top: 40px;
+}

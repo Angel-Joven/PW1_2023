@@ -1,0 +1,111 @@
+<!-- PROYECTO FINAL
+
+JOVEN JIMENEZ ANGEL CRISTIAN
+
+PROGRAMACION WEB 1 - 1559
+
+02/12/2022
+
+-->
+
+<!DOCTYPE html> <!-- Declaracion  -->
+<html> <!-- Lenguaje interpretado -->
+<head> <!-- Indicamos los metadatos. -->
+    <title>Parrila Vikinga</title> <!-- Le asignamos ese titulo el cual aparecera arriba en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Importamos nuestro archivo de estilos a nuestra pagina web. -->
+</head> <!-- Cerramos la etiqueta head. -->
+<body> <!-- Generamos nuestro cuerpo de la pagina web. -->
+    <header> <!-- Generamos nuestro header el cual sera la cabezera de nuestra pagina. -->
+
+        <div class="bg-color-01"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+            <div class="encabezado"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar el logo de la pagina. -->
+                <div class="logo"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a ubicar el logo con base a la grid anteriormente creada. -->
+                    <img src="img/logo.png" alt="logo" height="100px"> <!-- Insertamos nuestro logo con la etiqueta 'img' y le asignamos un nombre y una altura considerable. -->
+                </div> <!-- Cerramos la etiqueta div. -->
+            </div> <!-- Cerramos la etiqueta div. -->
+            
+
+            <div class="menu-navegacion"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a ubicar nuestro menu de navegacion. -->
+                <nav> <!-- Creamos nuestro menu de navegacion con la etiqueta 'nav' y le añadimos en forma de 
+                    lista las secciones con una redireccion a la nueva seccion y 
+                    una clase personalizada el cual los elementos los va a posicionar de manera horizontal. -->
+                    <ul>
+                        <li class="navegacion-horizontal"><a href="/index.html">MENU PRINCIPAL</a></li>
+                        <li class="navegacion-horizontal"><a href="/menuComida.html">MENU COMIDA</a></li>
+                        <li class="navegacion-horizontal"><a href="/galeria.html">GALERIA</a></li>
+                        <li class="navegacion-horizontal"><a href="/promociones.html">PROMOCIONES</a></li>
+                    </ul> <!-- Cerramos la etiqueta ul. -->
+                </nav> <!-- Cerramos la etiqueta nav. -->
+            </div> <!-- Cerramos la etiqueta div. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+    </header> <!-- Cerramos la etiqueta header. -->
+
+    <div class="bg-color-02"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+        <div class="promocion-dia"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar la imagen de la promocion del dia. -->
+            <h1 class="titulo-promo01">PROMOCION DEL DIA</h1> <!-- Creamos un titulo. --> 
+            <div class="promo01"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a ubicar la imagen con base a la grid anteriormente creada. -->
+                <img src="img/promo01.jpg" alt="promo01" height="400px"> <!-- Insertamos nuestra imagen con la etiqueta 'img' y le asignamos un nombre y una altura considerable. -->
+            </div> <!-- Cerramos la etiqueta div. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+
+        <div class="menuPrincipal-texto"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a modificar el titulo. -->
+            <h2>MENU PRINCIPAL</h2> <!-- Generamos nuestro titulo de la seccion. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+
+    </div> <!-- Cerramos la etiqueta div. -->
+
+    <div class="bg-color-03"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+        <div class="informacion"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar el texto e imagen deseada. -->
+
+            <p class="info01"><strong> <br> <br> <!-- Creamos un parrafo con una clase personalizada para ajustarla a la grid, 
+                esto con el fin de dar un pequeño resumen del restaurante, añadiendo saltos de linea. -->
+                Restaurante grande y colorido 
+                <br> que se especializa en barbacoas y comida estilo buffet <br>
+                <br> ¡Ven y disfruta de esta deliciosa comida!</strong>
+            </p> <!-- Cerramos la etiqueta p y strong. -->
+                 <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a 
+                    ajustar la imagen deseada con base a la grid creada con aterioridad. -->
+                <div class="imagen01">
+                    <!-- Insertamos nuestra imagen con la etiqueta 'img' y le asignamos un nombre y una altura considerable. -->
+                    <img src="img/img01.jpg" alt="imagen01" height="300px">
+                </div> <!-- Cerramos la etiqueta div. -->
+
+                <!-- Creamos un parrafo con una clase personalizada para ajustarla a la grid, 
+                esto con el fin de colocar la ubicacion, el horario y el telefono del restaurante, añadiendo saltos de linea. -->
+            <p class="info02"><br> Av. Gral. Juan Crisóstomo Bonilla 55,  
+                <br> Juan Escutia, Iztapalapa, 09100 
+                <br> Ciudad de México, CDMX <br>
+                <br> <strong>Telefono: </strong> 52 55 5744 7451 <br>
+                <br> <strong>Horario: </strong> Todos los dias de la semana de 08:30 a 22:00 horas
+            </p> <!-- Cerramos la etiqueta p. -->
+        
+                <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a 
+                    ajustar la imagen deseada con base a la grid creada con aterioridad. -->
+                <div class="imagen02">
+                    <!-- Insertamos nuestra imagen con la etiqueta 'img' y le asignamos un nombre y una altura considerable. 
+                        Ademas de que si el usuario da clic entonces lo va a mandar al google maps a localizar el restaurante. -->
+                    <a href="https://goo.gl/maps/yemRpucSMpwRer979"><img src="img/img02.jpg" alt="imagen02" height="300px"></a> 
+                </div> <!-- Cerramos la etiqueta div. -->
+        </div> <!-- Cerramos la etiqueta div. -->
+    </div> <!-- Cerramos la etiqueta div. -->
+
+    <footer> <!-- Creamos nuestro pie de pagina con la etiqueta 'footer' -->
+        <div class="bg-color-04"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a cambiar el color de dicho contenedor. -->
+            <div class="pie-de-pagina"> <!-- Creamos una nueva div con una clase personalizada el cual nos ayudara a crear una grid para ajustar el texto. -->
+            <!-- Creamos varios parrafos con una clase personalizada para ajustarla a la grid, 
+                esto con el fin de colocar informacion de contacto, añadiendo saltos de linea. -->
+                <p class="info03">UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO <br>
+                                        <br> FACULTAD DE ESTUDIOS SUPERIORES ARAGON</p> <!-- Cerramos la etiqueta p. -->
+    
+                <p class="info04">INGENIERIA EN COMPUTACION <br>
+                                        <br> PROGRAMACION WEB - 1559</p> <!-- Cerramos la etiqueta p. -->
+        
+                <p class="info05">PAGINA WEB CREADO POR: <br>
+                                        <br>JOVEN JIMENEZ ANGEL CRISTIAN</p> <!-- Cerramos la etiqueta p. -->
+    
+            </div> <!-- Cerramos la etiqueta div. --> 
+        </div> <!-- Cerramos la etiqueta div. -->
+    </footer> <!-- Cerramos la etiqueta footer. -->
+
+</body> <!-- Cerramos la etiqueta body. -->
+</html> <!-- Cerramos la etiqueta html. -->
