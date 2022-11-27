@@ -1,0 +1,56 @@
+/* CSS */
+
+div{ /* Seleecionan todas las etiquetas DIV */
+    background: red; /* Cambia el color del bg de la div */
+}
+
+.verde{ /* Seleecionan todas las clases con nombre 'verde' */
+    background: green;
+}
+
+#mediana{ /* Seleeciona la id con nombre 'mediana' */
+    width: 500px; /* Cambia el tamaño (en pixeles) de la div */
+    top: 100px; /* Reposiciona (en pixeles) las etiquetas del HTML (de manera estatica) */
+    right: ;
+    bottom: ;
+    left: ;
+}
+
+p{
+    font-size: 40px; /* Cambia el tamaño (en pixeles) del texto de las etiquetas p */
+}
+
+h1{
+    font-size: 80px; /* Cambia el tamaño (en pixeles) del texto de las etiquetas h1 */
+}
+
+v{
+    background: orange;
+    margin: 0px 0px 0px 0px; /* Cambia el tamaño (en pixeles) del margin en el sentido de las manecillas del reloj */
+}
+
+.fixedd {
+    position: fixed;
+    top: 100px; /* Reposiciona (en pixeles) las etiquetas del HTML */
+    right: ;
+    bottom: ;
+    left: ;
+}
+
+.relativa{
+    position: relative; /* Reposiciona (en pixeles) las etiquetas del HTML de manera relativa con base al tamaño de la ventana del navegador */
+    top: 100px; /* Reposiciona (en pixeles) las etiquetas del HTML */
+    right: ;
+    bottom: ;
+    left: ;
+}
+
+.absoluta{
+    position: absolute; /* Reposiciona (en pixeles) las etiquetas del HTML */
+    top: 100px; /* Reposiciona (en pixeles) las etiquetas del HTML */
+    right: ;
+    bottom: ;
+    left: ;
+}
+
+/* Cambiar definicion de absolute, relative, static y fixed */

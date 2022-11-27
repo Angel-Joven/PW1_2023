@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!-- Declaracion  -->
+<html> <!-- Lenguaje interpretado -->
+<head> <!-- Indica los metadatos (informacion que necesita la pagina web, la cual no lo vera el usuario) -->
+    <title>Hola mundo</title> <!-- Aparece arriba en la pestaña del navegador -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Importamos el archivo style.css -->
+</head>
+<body> <!-- Se encuentra todo lo que sera visible en la pagina web (el cuerpo de la pagina web) -->
+    <div>
+        <p>Parrafo
+            Parrafo
+            parrafo parrafo
+        </p>
+    
+           <!-- Nos sirve para hacer parrafos de acuerdo a la separacion entre linea y linea. -->
+
+    </div>
+
+<div></div> <!-- Crea secciones/agrupa etiquetas. Tambien agrupa contenido para crear secciones. Es un contenedor o caja de HTML. -->
+<span></span> <!-- Es un contenedor para texto/caracteres, ya sea texto plano o etiquetas p, h1, etc. Se puede personalizar esta etiqueta con css. -->
+
+<div>
+
+    <h1>Titulo</h1> <!-- Es para el titulo o nombre de la pagina, es el elemento mas importante, solo debe de haber 1 por archivo -->
+    <h2>Sub 2</h2> <!-- Valores por default, nos sirve para indicar los subtemas, subcapitulos, subsubcapitulos, etc -->
+    <h3>Sub 3</h3> <!-- Valores por default, nos sirve para indicar los subtemas, subcapitulos, subsubcapitulos, etc -->
+    <h4>Sub 4</h4> <!-- Valores por default, nos sirve para indicar los subtemas, subcapitulos, subsubcapitulos, etc -->
+    <h5>Sub 5</h5> <!-- Valores por default, nos sirve para indicar los subtemas, subcapitulos, subsubcapitulos, etc -->
+    <h6>Sub 6</h6> <!-- Valores por default, nos sirve para indicar los subtemas, subcapitulos, subsubcapitulos, etc -->
+
+</div>
+
+<div>
+
+    <img src="" alt=""> <!-- Añade una imagen a la página con src insertando un link. -->
+
+    <img src="" alt=""> <!-- Añade una imagen a la pagina con src de manera local -->
+    
+    <h2>Ruta absoluta:</h2>
+    
+    <!-- Ruta absoluta: D:\PROGRAMACION WEB\CLASE 03102022\img\img01.png -->
+    
+    <img src="D:\PROGRAMACION WEB\CLASE 03102022\img\img01.png" alt="imagen random 01" height="100px">
+    
+    <h2>Ruta relativa:</h2>
+    
+    <!-- Ruta relativa: ../img01.png -->
+    
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width="">
+    
+    <!-- El alt sirve para hacer un resumen de la imagen en caso de que esta no cargue -->
+    
+    <!-- Height y width sirve para cambiar el tamaño de la imagen en pixeles, lo ideal es solo usar uno de ellos y no los 2 juntos ya que deforma la imagen. -->
+
+</div>
+
+<div>
+
+    <!-- Personalizan el estilo del texto que vaya en estas etiquetas. -->
+    <p>Parrafo</p> <!-- Normal -->
+    <strong>Parrafo</strong> <!-- Texto en negritas. Ya esta definido con caracteristicas predeterminadas. -->
+    <mark>Parrafo</mark> <!-- Subraya el texto (con marcatextos). -->
+    <sub>Parrafo</sub> <!-- Subindice. -->
+    <sup>Parrafo</sup> <!-- Superindice. -->
+    <b>Parrafo</b> <!-- Texto en negritas (temas de accesibilidad en los metadatos/tema de importancia). -->
+    <span style="font-size: 60px; background: green;">Parrafo</span> <!-- Es un contenedor para texto/caracteres, 
+                                                                        ya sea texto plano o etiquetas p, h1, etc. Se puede personalizar esta etiqueta con css. -->
+
+    <!-- Las etiquetas mas importantes por orden de importancia. ¿cuales son? -->
+
+    <!-- Elementos en linea: Ocupan el ancho de la pagina y pueden compartir la linea, si el espacio no alcanza entonces van a la siguiente linea.
+        Elementos en bloque: Ocupan el espacio en funcion de la pantalla. Ejemplo: parrafo, img, div, listas, h1-h6 -->
+
+</div>
+
+<div>
+
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width=""> 
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width="">
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width="">
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width="">
+    <img src="img/img01.png" alt="imagen random 02" height="100px" width="">
+
+</div>
+
+<!-- TABLAS -->
+
+<table> <!-- Informacion necesaria al navegador sobre las tablas. -->
+<tr></tr> <!-- Se indican las filas de la tabla. -->
+<td></td> <!-- Se indican las celdas de la tabla. -->
+<th></th> <!-- Se indican las celdas de los encabezados de la tabla. -->
+<caption></caption> <!-- Asigna el titulo de la tabla. Se ajusta al contenido de la tabla. -->
+<thead></thead> <!-- Contiene a los encabezados con th. Reemplaza los td. -->
+<tbody></tbody> <!-- Contiene las tr o celdas de la tabla. Se coloca con un td -->
+<tfoot></tfoot> <!-- Indica los resultados de alguna operacion. -->
+<div></div> <!-- Crea secciones/agrupa etiquetas. Tambien agrupa contenido para crear secciones. Es un contenedor o caja de HTML. -->
+<span></span> <!-- Es un contenedor para texto/caracteres, ya sea texto plano o etiquetas p, h1, etc. Se puede personalizar esta etiqueta con css. -->
+</table>
+
+<table border="1px"> <!-- Es el margen de la tabla en pixeles. -->
+    <caption>Lista de contactos.</caption> <!-- Titulo. -->
+    <thead> <!-- Encabezados. -->
+        <tr> 
+            <th>Encabezado 1</th> 
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+    </thead>
+
+    <tbody> <!-- Celdas de la tabla. -->
+        <tr>
+            <td>Celda 1</td> 
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </tbody>
+
+    <tfoot> <!-- Resultados de la tabla. -->
+        <tr>
+            <td>Resultados 1</td> 
+            <td>Resultados 2</td>
+            <td>Resultados 3</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- LISTAS. -->
+
+<li></li> <!-- Elementos de la lista. -->
+<ol></ol> <!-- Hace una lista ordenada. -->
+<ul></ul> <!-- Hace una lista desordenada. -->
+<dl></dl> <!-- Listas de definicion. Como si fuera un diccionario. -->
+<dt></dt> <!-- Palabra a definir. -->
+<dd></dd> <!-- Definicion de la palabra. -->
+
+<ul type="square"></ul> <!-- Cambia el tipo de figura/viñeta de la lista. -->
+
+<div>
+    <dl>Nombre de la lista de definicion.</dl>
+    <dt>Palabra a definir.</dt>
+    <dd>Definicion de la palabra.</dd>
+    <ol>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ol>
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+    <ul type="circle">
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+        <li>Elemento D</li>
+        <li>Elemento F</li>
+    </ul>
+</div>
+
+<!-- Listas combinadas. -->
+
+<div>
+    <ol>Elemento 1</ol>
+    <ol>Elemento 2
+        <ul>
+            <li>Elemento 2.1</li>
+            <li>Elemento 2.2</li>
+            <li>Elemento 2.3</li>
+        </ul>
+    </ol>
+    <ol>Elemento 3</ol>
+    <ol>Elemento 4</ol>
+</div>
+
+<figure></figure> <!-- Vincula multimedia (comunmente imagenes) con definiciones. (figcaption). -->
+<figcaption></figcaption> <!-- Describe el contenido del multimedia. -->
+<img src="" alt="imagen random 03"> <!-- Alt es un auxiliar, esto es en dado caso de que no encuentre la imagen o multimedia. -->
+
+<div>
+    <figure>
+        <img src="img/img01.png" alt="imagen random 03" height="100px"> 
+        <figcaption>Imagen random 03</figcaption>
+    </figure>
+</div>
+
+<!-- CSS -->
+
+<div class="verde"> <!-- Si se pueden compartir con otras etiquetas. -->
+    <p>Clase 'verde' modificada con css (background green)</p>
+</div>
+<div class="verde Mediana"></div> <!-- 2 clases en una misma etiqueta. -->
+
+<div id="mediana"> <!-- identificador el cual no se pueden compartir. -->
+    <p>Id 'mediana' modificada con css (width 500px)</p>
+</div>
+
+<div>
+    <p>Etiqueta p modificada con css (font-size 40px)</p>
+</div>
+
+<div>
+    <h1>Etiqueta h1 modificada con css (font-size 80px)</h1>
+</div>
+
+<div class="fixedd">
+    <p>Clase 'fixedd' modificada con css</p>
+</div>
+
+<div class="relativa">
+    <p>Clase 'relativa' modificada con css</p>
+</div>
+
+<div class="absoluta">
+    <p>Clase 'absoluta' modificada con css</p>
+</div>
+
+    <!-- Crear un curriculum vitae con nuestra foto (creando secciones con etiqueta div) como segundo examen parcial en html -->
+
+    <!-- PROYECTO (2 de diciembre): Hacer una pagina web con html y ccs hecho por nosotros de... -->
+
+</body>
+</html> <!-- Etiqueta de cierre --> 
